@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
 dotenv.config();
-//connection using mongoose to database 
+//connection using mongoose to database
 
 const connection = mongoose
   .connect(process.env.MONGO_URI, {
@@ -13,5 +13,4 @@ const connection = mongoose
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.error("Mongodb Connection Error:", err));
 
-
-module.exports = connection
+module.exports = connection;
